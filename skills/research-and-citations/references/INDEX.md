@@ -2,12 +2,21 @@
 
 | Situation | Read |
 |---|---|
-| Need to decide how to search and when to broaden | `search-routing.md` |
-| Source quality, primary sources, triangulation | `source-quality-and-triangulation.md` |
-| Final citation coverage / claim-to-source mapping | `citation-audit.md` |
-| Currentness, conflicting reports, changing facts | `recency-and-conflict.md` |
+| Broad, current, or hard-to-find topic | `search-routing.md` |
+| Brief is ambiguous; deciding whether to ask first | `clarifying-questions.md` |
+| Evidence quality decides the answer; sources disagree | `source-quality-and-triangulation.md` |
+| Finalizing research-heavy prose | `citation-audit.md` |
+| "Latest", "current", "as of now", or a date-bound question | `recency-and-conflict.md` |
+| Quoting or closely summarizing a third-party text | `copyright-and-quoting.md` |
+| Model is weak, distracted, or invents sources | `weak-model-mode.md` |
 
+## Reference contract
 
-## When instruction-following is unreliable
+These references are procedures. The two that matter most in practice are `citation-audit.md` (it catches the errors that reach the user) and `clarifying-questions.md` (it prevents an entire wasted research run).
 
-Read `weak-model-mode.md` before applying the detailed rules. It turns the reference selection and final checks into an explicit procedure.
+## Default routing
+
+- Any date-sensitive claim → `recency-and-conflict.md`.
+- Any quotation longer than a short phrase → `copyright-and-quoting.md`.
+- Any answer that cites more than three sources → `citation-audit.md` before sending.
+- Any research run longer than a few tool calls, with an ambiguous brief → `clarifying-questions.md` *first*.
