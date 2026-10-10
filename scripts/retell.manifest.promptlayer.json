@@ -1,0 +1,56 @@
+{
+  "system-prompts/00-global-core": [
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 470, "end": 478 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 41, "end": 53 },
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 61, "end": 66 }
+  ],
+  "system-prompts/10-agent-operations": [
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 217, "end": 226 },
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 57, "end": 60 },
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 184, "end": 200 },
+    { "source": "system_prompts_leaks/Misc/warp-2.0-agent.md", "start": 61, "end": 96 }
+  ],
+  "system-prompts/overlays/coding-agent": [
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 64, "end": 85 },
+    { "source": "system_prompts_leaks/OpenAI/Codex/gpt-5.6.md", "start": 85, "end": 92 },
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 47, "end": 59 },
+    { "source": "system_prompts_leaks/Cursor/cursor.md", "start": 61, "end": 122 }
+  ],
+  "system-prompts/overlays/research-and-web": [
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 279, "end": 345 },
+    { "source": "system_prompts_leaks/Anthropic/research_instructions.md", "start": 19, "end": 31 }
+  ],
+  "system-prompts/overlays/academic-writing": [
+    { "source": "system_prompts_leaks/Anthropic/research_instructions.md", "start": 140, "end": 166 },
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 369, "end": 410 }
+  ],
+  "system-prompts/overlays/data-analysis": [
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 316, "end": 378 },
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 123, "end": 130 }
+  ],
+  "system-prompts/overlays/decision-advisor": [
+    { "source": "system_prompts_leaks/Anthropic/research_instructions.md", "start": 19, "end": 31 },
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 470, "end": 471 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 202, "end": 210 }
+  ],
+  "system-prompts/overlays/creative-artist": [
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 23, "end": 63 },
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 438, "end": 438 }
+  ],
+  "system-prompts/overlays/roleplay": [
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 476, "end": 478 },
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 468, "end": 468 },
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 482, "end": 484 }
+  ],
+  "system-prompts/overlays/student-learning": [
+    { "source": "system_prompts_leaks/Google/gemini-2.5-pro-guided-learning.md", "start": 12, "end": 117 }
+  ],
+  "system-prompts/overlays/safety-and-wellbeing": [
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 416, "end": 420 },
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 472, "end": 473 }
+  ],
+  "system-prompts/overlays/output-format-and-artifacts": [
+    { "source": "CL4R1T4S/ANTHROPIC/Claude-4.1.txt", "start": 23, "end": 63 },
+    { "source": "system_prompts_leaks/Cursor/cursor.md", "start": 61, "end": 122 }
+  ]
+}
