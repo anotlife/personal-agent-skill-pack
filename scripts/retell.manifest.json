@@ -1,0 +1,99 @@
+{
+  "personal-core": [
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 41, "end": 53 },
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 29, "end": 44 },
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 47, "end": 59 }
+  ],
+  "verify-before-claim": [
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 45, "end": 56 },
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 29, "end": 44 },
+    { "source": "system_prompts_leaks/OpenAI/Codex/gpt-5.6.md", "start": 93, "end": 113 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 211, "end": 216 }
+  ],
+  "scope-and-minimal-change": [
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 184, "end": 191 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 281, "end": 292 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 41, "end": 53 },
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 47, "end": 59 }
+  ],
+  "tool-and-file-discipline": [
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 64, "end": 75 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 76, "end": 85 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 217, "end": 226 },
+    { "source": "system_prompts_leaks/Misc/zed.md", "start": 11, "end": 35 },
+    { "source": "system_prompts_leaks/Microsoft/copilot-cli.md", "start": 14, "end": 30 }
+  ],
+  "research-and-citations": [
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 279, "end": 345 },
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 346, "end": 410 }
+  ],
+  "academic-report": [
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 369, "end": 390 },
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 391, "end": 398 },
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 399, "end": 410 },
+    { "source": "system_prompts_leaks/Anthropic/research_instructions.md", "start": 140, "end": 153 },
+    { "missing": true, "note": "源文档未涵盖实验报告的证据分级、方法/结果/讨论分离、可复现性等学术写作方法论" }
+  ],
+  "anti-slop-writing": [
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 61, "end": 81 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 107, "end": 130 },
+    { "source": "system_prompts_leaks/OpenAI/Codex/codex-auto-review.md", "start": 58, "end": 74 }
+  ],
+  "argument-audit": [
+    { "source": "system_prompts_leaks/Anthropic/research_instructions.md", "start": 19, "end": 31 },
+    { "source": "system_prompts_leaks/Anthropic/research_instructions.md", "start": 140, "end": 166 },
+    { "source": "system_prompts_leaks/Perplexity/deep-research.md", "start": 279, "end": 345 },
+    { "missing": true, "note": "源文档未涵盖形式逻辑、因果推断、统计推断与论证谬误目录等方法论" }
+  ],
+  "error-recovery": [
+    { "source": "system_prompts_leaks/Misc/warp-2.0-agent.md", "start": 91, "end": 96 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 202, "end": 210 },
+    { "source": "system_prompts_leaks/Microsoft/copilot-cli.md", "start": 765, "end": 793 }
+  ],
+  "context-and-memory": [
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 87, "end": 222 },
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 228, "end": 232 }
+  ],
+  "code-craft": [
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 64, "end": 75 },
+    { "source": "system_prompts_leaks/OpenAI/Codex/gpt-5.6.md", "start": 85, "end": 92 },
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 47, "end": 59 },
+    { "source": "system_prompts_leaks/Cursor/cursor.md", "start": 113, "end": 122 }
+  ],
+  "task-planning": [
+    { "source": "system_prompts_leaks/OpenAI/Codex/plan_mode.md", "start": 1, "end": 122 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 192, "end": 201 }
+  ],
+  "communication-style": [
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 61, "end": 81 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 107, "end": 130 },
+    { "source": "system_prompts_leaks/OpenAI/Codex/codex-auto-review.md", "start": 58, "end": 93 },
+    { "source": "system_prompts_leaks/Misc/zed.md", "start": 3, "end": 10 }
+  ],
+  "debugging-method": [
+    { "source": "system_prompts_leaks/Misc/zed.md", "start": 144, "end": 156 },
+    { "source": "system_prompts_leaks/Misc/warp-2.0-agent.md", "start": 61, "end": 76 },
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 137, "end": 148 }
+  ],
+  "git-and-version-control": [
+    { "source": "CL4R1T4S/OPENAI/Codex_Sep-15-2025.md", "start": 8, "end": 16 },
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 215, "end": 233 },
+    { "source": "system_prompts_leaks/Misc/warp-2.0-agent.md", "start": 81, "end": 85 },
+    { "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md", "start": 1522, "end": 1603 }
+  ],
+  "delegation-and-subagents": [
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 79, "end": 117 },
+    { "source": "system_prompts_leaks/Misc/zed.md", "start": 163, "end": 176 },
+    { "source": "system_prompts_leaks/Microsoft/copilot-cli.md", "start": 857, "end": 960 }
+  ],
+  "untrusted-content": [
+    { "source": "system_prompts_leaks/Google/gemini-cli.md", "start": 5, "end": 8 },
+    { "source": "system_prompts_leaks/Misc/warp-2.0-agent.md", "start": 86, "end": 90 },
+    { "source": "system_prompts_leaks/Microsoft/copilot-cli.md", "start": 765, "end": 793 }
+  ],
+  "review-and-critique": [
+    { "source": "system_prompts_leaks/Microsoft/copilot-cli.md", "start": 862, "end": 944 },
+    { "source": "system_prompts_leaks/Misc/amp-code.md", "start": 86, "end": 93 },
+    { "source": "system_prompts_leaks/OpenAI/Codex/codex-auto-review.md", "start": 5, "end": 10 }
+  ]
+}

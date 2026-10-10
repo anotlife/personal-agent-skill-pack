@@ -1,7 +1,28 @@
 {
-  "generated": "2026-10-10T09:01:32.833Z",
+  "generated": "2026-10-10T10:06:50.103Z",
   "rules": "1-33",
   "entries": [
+    {
+      "slot": "personal-core",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 41,
+      "end": 53,
+      "lines": 13
+    },
+    {
+      "slot": "personal-core",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 29,
+      "end": 44,
+      "lines": 16
+    },
+    {
+      "slot": "personal-core",
+      "source": "system_prompts_leaks/Google/gemini-cli.md",
+      "start": 47,
+      "end": 59,
+      "lines": 13
+    },
     {
       "slot": "verify-before-claim",
       "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
@@ -29,30 +50,508 @@
       "start": 211,
       "end": 216,
       "lines": 6
+    },
+    {
+      "slot": "scope-and-minimal-change",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 184,
+      "end": 191,
+      "lines": 8
+    },
+    {
+      "slot": "scope-and-minimal-change",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 281,
+      "end": 292,
+      "lines": 12
+    },
+    {
+      "slot": "scope-and-minimal-change",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 41,
+      "end": 53,
+      "lines": 13
+    },
+    {
+      "slot": "scope-and-minimal-change",
+      "source": "system_prompts_leaks/Google/gemini-cli.md",
+      "start": 47,
+      "end": 59,
+      "lines": 13
+    },
+    {
+      "slot": "tool-and-file-discipline",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 64,
+      "end": 75,
+      "lines": 12
+    },
+    {
+      "slot": "tool-and-file-discipline",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 76,
+      "end": 85,
+      "lines": 10
+    },
+    {
+      "slot": "tool-and-file-discipline",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 217,
+      "end": 226,
+      "lines": 10
+    },
+    {
+      "slot": "tool-and-file-discipline",
+      "source": "system_prompts_leaks/Misc/zed.md",
+      "start": 11,
+      "end": 35,
+      "lines": 25
+    },
+    {
+      "slot": "tool-and-file-discipline",
+      "source": "system_prompts_leaks/Microsoft/copilot-cli.md",
+      "start": 14,
+      "end": 30,
+      "lines": 17
+    },
+    {
+      "slot": "research-and-citations",
+      "source": "system_prompts_leaks/Perplexity/deep-research.md",
+      "start": 279,
+      "end": 345,
+      "lines": 67
+    },
+    {
+      "slot": "research-and-citations",
+      "source": "system_prompts_leaks/Perplexity/deep-research.md",
+      "start": 346,
+      "end": 410,
+      "lines": 65
+    },
+    {
+      "slot": "academic-report",
+      "source": "system_prompts_leaks/Perplexity/deep-research.md",
+      "start": 369,
+      "end": 390,
+      "lines": 22
+    },
+    {
+      "slot": "academic-report",
+      "source": "system_prompts_leaks/Perplexity/deep-research.md",
+      "start": 391,
+      "end": 398,
+      "lines": 8
+    },
+    {
+      "slot": "academic-report",
+      "source": "system_prompts_leaks/Perplexity/deep-research.md",
+      "start": 399,
+      "end": 410,
+      "lines": 12
+    },
+    {
+      "slot": "academic-report",
+      "source": "system_prompts_leaks/Anthropic/research_instructions.md",
+      "start": 140,
+      "end": 153,
+      "lines": 14
+    },
+    {
+      "slot": "anti-slop-writing",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 61,
+      "end": 81,
+      "lines": 21
+    },
+    {
+      "slot": "anti-slop-writing",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 107,
+      "end": 130,
+      "lines": 24
+    },
+    {
+      "slot": "anti-slop-writing",
+      "source": "system_prompts_leaks/OpenAI/Codex/codex-auto-review.md",
+      "start": 58,
+      "end": 74,
+      "lines": 17
+    },
+    {
+      "slot": "argument-audit",
+      "source": "system_prompts_leaks/Anthropic/research_instructions.md",
+      "start": 19,
+      "end": 31,
+      "lines": 13
+    },
+    {
+      "slot": "argument-audit",
+      "source": "system_prompts_leaks/Anthropic/research_instructions.md",
+      "start": 140,
+      "end": 166,
+      "lines": 27
+    },
+    {
+      "slot": "argument-audit",
+      "source": "system_prompts_leaks/Perplexity/deep-research.md",
+      "start": 279,
+      "end": 345,
+      "lines": 67
+    },
+    {
+      "slot": "error-recovery",
+      "source": "system_prompts_leaks/Misc/warp-2.0-agent.md",
+      "start": 91,
+      "end": 96,
+      "lines": 6
+    },
+    {
+      "slot": "error-recovery",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 202,
+      "end": 210,
+      "lines": 9
+    },
+    {
+      "slot": "error-recovery",
+      "source": "system_prompts_leaks/Microsoft/copilot-cli.md",
+      "start": 765,
+      "end": 793,
+      "lines": 29
+    },
+    {
+      "slot": "context-and-memory",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 87,
+      "end": 222,
+      "lines": 136
+    },
+    {
+      "slot": "context-and-memory",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 228,
+      "end": 232,
+      "lines": 5
+    },
+    {
+      "slot": "code-craft",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 64,
+      "end": 75,
+      "lines": 12
+    },
+    {
+      "slot": "code-craft",
+      "source": "system_prompts_leaks/OpenAI/Codex/gpt-5.6.md",
+      "start": 85,
+      "end": 92,
+      "lines": 8
+    },
+    {
+      "slot": "code-craft",
+      "source": "system_prompts_leaks/Google/gemini-cli.md",
+      "start": 47,
+      "end": 59,
+      "lines": 13
+    },
+    {
+      "slot": "code-craft",
+      "source": "system_prompts_leaks/Cursor/cursor.md",
+      "start": 113,
+      "end": 122,
+      "lines": 10
+    },
+    {
+      "slot": "task-planning",
+      "source": "system_prompts_leaks/OpenAI/Codex/plan_mode.md",
+      "start": 1,
+      "end": 122,
+      "lines": 122
+    },
+    {
+      "slot": "task-planning",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 192,
+      "end": 201,
+      "lines": 10
+    },
+    {
+      "slot": "communication-style",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 61,
+      "end": 81,
+      "lines": 21
+    },
+    {
+      "slot": "communication-style",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 107,
+      "end": 130,
+      "lines": 24
+    },
+    {
+      "slot": "communication-style",
+      "source": "system_prompts_leaks/OpenAI/Codex/codex-auto-review.md",
+      "start": 58,
+      "end": 93,
+      "lines": 36
+    },
+    {
+      "slot": "communication-style",
+      "source": "system_prompts_leaks/Misc/zed.md",
+      "start": 3,
+      "end": 10,
+      "lines": 8
+    },
+    {
+      "slot": "debugging-method",
+      "source": "system_prompts_leaks/Misc/zed.md",
+      "start": 144,
+      "end": 156,
+      "lines": 13
+    },
+    {
+      "slot": "debugging-method",
+      "source": "system_prompts_leaks/Misc/warp-2.0-agent.md",
+      "start": 61,
+      "end": 76,
+      "lines": 16
+    },
+    {
+      "slot": "debugging-method",
+      "source": "system_prompts_leaks/Google/gemini-cli.md",
+      "start": 137,
+      "end": 148,
+      "lines": 12
+    },
+    {
+      "slot": "git-and-version-control",
+      "source": "CL4R1T4S/OPENAI/Codex_Sep-15-2025.md",
+      "start": 8,
+      "end": 16,
+      "lines": 9
+    },
+    {
+      "slot": "git-and-version-control",
+      "source": "system_prompts_leaks/Google/gemini-cli.md",
+      "start": 215,
+      "end": 233,
+      "lines": 19
+    },
+    {
+      "slot": "git-and-version-control",
+      "source": "system_prompts_leaks/Misc/warp-2.0-agent.md",
+      "start": 81,
+      "end": 85,
+      "lines": 5
+    },
+    {
+      "slot": "git-and-version-control",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 1522,
+      "end": 1603,
+      "lines": 82
+    },
+    {
+      "slot": "delegation-and-subagents",
+      "source": "system_prompts_leaks/Google/gemini-cli.md",
+      "start": 79,
+      "end": 117,
+      "lines": 39
+    },
+    {
+      "slot": "delegation-and-subagents",
+      "source": "system_prompts_leaks/Misc/zed.md",
+      "start": 163,
+      "end": 176,
+      "lines": 14
+    },
+    {
+      "slot": "delegation-and-subagents",
+      "source": "system_prompts_leaks/Microsoft/copilot-cli.md",
+      "start": 857,
+      "end": 960,
+      "lines": 104
+    },
+    {
+      "slot": "untrusted-content",
+      "source": "system_prompts_leaks/Google/gemini-cli.md",
+      "start": 5,
+      "end": 8,
+      "lines": 4
+    },
+    {
+      "slot": "untrusted-content",
+      "source": "system_prompts_leaks/Misc/warp-2.0-agent.md",
+      "start": 86,
+      "end": 90,
+      "lines": 5
+    },
+    {
+      "slot": "untrusted-content",
+      "source": "system_prompts_leaks/Microsoft/copilot-cli.md",
+      "start": 765,
+      "end": 793,
+      "lines": 29
+    },
+    {
+      "slot": "review-and-critique",
+      "source": "system_prompts_leaks/Microsoft/copilot-cli.md",
+      "start": 862,
+      "end": 944,
+      "lines": 83
+    },
+    {
+      "slot": "review-and-critique",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 86,
+      "end": 93,
+      "lines": 8
+    },
+    {
+      "slot": "review-and-critique",
+      "source": "system_prompts_leaks/OpenAI/Codex/codex-auto-review.md",
+      "start": 5,
+      "end": 10,
+      "lines": 6
     }
   ],
   "changed": [
     {
+      "slot": "personal-core",
+      "file": "retell\\personal-core.md",
+      "selections": 3
+    },
+    {
       "slot": "verify-before-claim",
       "file": "retell\\verify-before-claim.md",
       "selections": 4
+    },
+    {
+      "slot": "scope-and-minimal-change",
+      "file": "retell\\scope-and-minimal-change.md",
+      "selections": 4
+    },
+    {
+      "slot": "tool-and-file-discipline",
+      "file": "retell\\tool-and-file-discipline.md",
+      "selections": 5
+    },
+    {
+      "slot": "research-and-citations",
+      "file": "retell\\research-and-citations.md",
+      "selections": 2
+    },
+    {
+      "slot": "academic-report",
+      "file": "retell\\academic-report.md",
+      "selections": 5
+    },
+    {
+      "slot": "anti-slop-writing",
+      "file": "retell\\anti-slop-writing.md",
+      "selections": 3
+    },
+    {
+      "slot": "argument-audit",
+      "file": "retell\\argument-audit.md",
+      "selections": 4
+    },
+    {
+      "slot": "error-recovery",
+      "file": "retell\\error-recovery.md",
+      "selections": 3
+    },
+    {
+      "slot": "context-and-memory",
+      "file": "retell\\context-and-memory.md",
+      "selections": 2
+    },
+    {
+      "slot": "code-craft",
+      "file": "retell\\code-craft.md",
+      "selections": 4
+    },
+    {
+      "slot": "task-planning",
+      "file": "retell\\task-planning.md",
+      "selections": 2
+    },
+    {
+      "slot": "communication-style",
+      "file": "retell\\communication-style.md",
+      "selections": 4
+    },
+    {
+      "slot": "debugging-method",
+      "file": "retell\\debugging-method.md",
+      "selections": 3
+    },
+    {
+      "slot": "git-and-version-control",
+      "file": "retell\\git-and-version-control.md",
+      "selections": 4
+    },
+    {
+      "slot": "delegation-and-subagents",
+      "file": "retell\\delegation-and-subagents.md",
+      "selections": 3
+    },
+    {
+      "slot": "untrusted-content",
+      "file": "retell\\untrusted-content.md",
+      "selections": 3
+    },
+    {
+      "slot": "review-and-critique",
+      "file": "retell\\review-and-critique.md",
+      "selections": 3
     }
   ],
-  "deleted": [],
+  "deleted": [
+    {
+      "slot": "academic-report",
+      "source": "-",
+      "reason": "源文档未涵盖该主题：源文档未涵盖实验报告的证据分级、方法/结果/讨论分离、可复现性等学术写作方法论"
+    },
+    {
+      "slot": "argument-audit",
+      "source": "-",
+      "reason": "源文档未涵盖该主题：源文档未涵盖形式逻辑、因果推断、统计推断与论证谬误目录等方法论"
+    }
+  ],
   "violations": [],
   "verification": {
-    "checked": 39,
-    "passed": 39,
+    "checked": 1069,
+    "passed": 1069,
     "failed": 0,
     "failures": []
   }
 }
 
 【改动清单】
+- 新增 retell\personal-core.md（3 个逐字块）
 - 新增 retell\verify-before-claim.md（4 个逐字块）
+- 新增 retell\scope-and-minimal-change.md（4 个逐字块）
+- 新增 retell\tool-and-file-discipline.md（5 个逐字块）
+- 新增 retell\research-and-citations.md（2 个逐字块）
+- 新增 retell\academic-report.md（5 个逐字块）
+- 新增 retell\anti-slop-writing.md（3 个逐字块）
+- 新增 retell\argument-audit.md（4 个逐字块）
+- 新增 retell\error-recovery.md（3 个逐字块）
+- 新增 retell\context-and-memory.md（2 个逐字块）
+- 新增 retell\code-craft.md（4 个逐字块）
+- 新增 retell\task-planning.md（2 个逐字块）
+- 新增 retell\communication-style.md（4 个逐字块）
+- 新增 retell\debugging-method.md（3 个逐字块）
+- 新增 retell\git-and-version-control.md（4 个逐字块）
+- 新增 retell\delegation-and-subagents.md（3 个逐字块）
+- 新增 retell\untrusted-content.md（3 个逐字块）
+- 新增 retell\review-and-critique.md（3 个逐字块）
 
 【删除清单】
-- 无
+- academic-report | - | 源文档未涵盖该主题：源文档未涵盖实验报告的证据分级、方法/结果/讨论分离、可复现性等学术写作方法论
+- argument-audit | - | 源文档未涵盖该主题：源文档未涵盖形式逻辑、因果推断、统计推断与论证谬误目录等方法论
 
-规则26自检：检查 39 行，通过 39，失败 0
+规则26自检：检查 1069 行，通过 1069，失败 0
 因自检失败整体删除的文件：无

@@ -46,6 +46,9 @@ const CONFLICT = "[冲突]";
 const OMITTED = "[原文省略]";
 const NAV = "[非原文/导航]";
 
+// Rule 18: the only non-original content permitted, and it must stay separated from the body.
+const WHITELIST = new Set([MISSING, CONFLICT, OMITTED, NAV]);
+
 function readJson(file) {
   try {
     return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -86,6 +89,14 @@ for (const [slot, selections] of Object.entries(manifest)) {
   const chunks = [];
 
   for (const sel of selections) {
+    if (sel.missing) {
+      // Rule 20: the source does not contain this, so say so rather than padding with
+      // adjacent-but-irrelevant text that would still pass the verbatim check.
+      chunks.push(`${OPEN}\n${MISSING}\n${CLOSE}\n\n[来源：原文未提供]${sel.note ? `（${sel.note}）` : ""}\n`);
+      report.deleted.push({ slot, source: "-", reason: `源文档未涵盖该主题${sel.note ? `：${sel.note}` : ""}` });
+      continue;
+    }
+
     const lines = sourceLines(sel.source);
     if (!lines) {
       chunks.push(`${OPEN}\n${MISSING}\n${CLOSE}\n\n[来源：${sel.source}][来源未定位]\n`);
@@ -164,6 +175,10 @@ function verifyFile(absFile) {
     for (let b = 0; b < body.length; b++) {
       const text = body[b];
       if (text === "") continue;
+      // Rule 18 whitelists these as non-original content. They are markers, not body text,
+      // so requiring them to appear in the source is a false positive that would delete a
+      // compliant file. Only rule-18 content is skipped; everything else must be verbatim.
+      if (WHITELIST.has(text.trim()) || text.trim().startsWith("[来源")) continue;
       report.verification.checked++;
       const ok = src !== null && src.includes(text);
       if (ok) {
@@ -204,7 +219,7 @@ const summary = [
   "",
   "【改动清单】",
   ...(report.changed.length
-    ? report.changed.map((c) => `- 新增 ${c.file}（${c.selections} 个逐字块）`)
+    ? report.changed.map((c) => `- 新增 ${c.file}${c.selections ? `（${c.selections} 个逐字块）` : ""}`)
     : ["- 无"]),
   "",
   "【删除清单】",
