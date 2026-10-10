@@ -16,3 +16,17 @@
 ## Loading policy
 
 `SKILL.md` is intentionally short. Use `references/INDEX.md` to route into detailed rules. Load only what the current task needs; use `weak-model-mode.md` when attention/instruction-following is unreliable.
+
+
+## Prompt-layer routing matrix
+
+| Always-on core | Conditional overlay | Skill/reference |
+|---|---|---|
+| No empty praise; independent evaluation | Decision & argument advisor | `argument-audit` |
+| Do not fabricate; calibrate confidence | Research & web | `research-and-citations` |
+| Stay within request scope | Coding agent / agent operations | `scope-and-minimal-change` |
+| Do not claim unverified completion | Data analysis / coding agent | `verify-before-claim` |
+| Direct, proportional answer | Student learning / academic writing | `academic-report` |
+| Respect known preferences and task mode | Creative / artist / roleplay | `anti-slop-writing` when relevant |
+
+See `system-prompts/PLACEMENT-RUBRIC.md` for why these layers differ.

@@ -1,35 +1,27 @@
 # Sources and Extraction Notes
 
-## Primary source repositories
+## Primary collections
 
-- elder-plinius/CL4R1T4S — https://github.com/elder-plinius/CL4R1T4S
-- asgeirtj/system_prompts_leaks — https://github.com/asgeirtj/system_prompts_leaks
+- CL4R1T4S: https://github.com/elder-plinius/CL4R1T4S
+- System Prompts Leaks: https://github.com/asgeirtj/system_prompts_leaks
 
-## Representative patterns consulted
+## Representative source files and official guidance
 
-- OpenCode skill loading: https://github.com/asgeirtj/system_prompts_leaks/blob/main/OpenCode/opencode.md
-- Cursor system instructions: https://github.com/elder-plinius/CL4R1T4S/blob/main/CURSOR/Cursor_2.0_Sys_Prompt.txt
-- OpenAI Codex instructions: https://github.com/elder-plinius/CL4R1T4S/blob/main/OPENAI/Codex.md
-- Muse Spark skill loading: https://github.com/asgeirtj/system_prompts_leaks/blob/main/Meta/muse-spark-1.1-web.md
-- Claude Code `run` skill: https://github.com/asgeirtj/system_prompts_leaks/blob/main/Anthropic/claude-code/skills/run/SKILL.md
-- Claude Code `import-memory` skill: https://github.com/asgeirtj/system_prompts_leaks/blob/main/Anthropic/claude-code/skills/import-memory/SKILL.md
-- Grok Build skill catalog: https://github.com/asgeirtj/system_prompts_leaks/blob/main/xAI/grok-build.md
+- Claude 4.1 capture (anti-flattery, independent evaluation, roleplay separation, research/citation workflows): https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude-4.1.txt
+- Codex capture: https://github.com/elder-plinius/CL4R1T4S/blob/main/OPENAI/Codex.md
+- OpenCode prompt and Skill loading: https://github.com/asgeirtj/system_prompts_leaks/blob/main/OpenCode/opencode.md
+- Anthropic prompt engineering guide: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices
+- Google AI prompting strategies: https://ai.google.dev/gemini-api/docs/prompting-strategies.md
+- Pi configuration and prompt files: https://pi.dev/docs/latest/configuration
+- OpenCode rules: https://opencode.ai/docs/rules/
 
-## What was extracted
+## Extracted principles
 
-The pack focuses on recurring, transferable behaviors rather than product-specific personas or secret implementation details:
+- Cross-domain behavior defaults: anti-sycophancy, honesty, calibrated uncertainty, scope fidelity, and accurate reporting of actions.
+- Conditional operations: tool selection, inspect-before-edit, side-effect management, failure recovery, validation.
+- Task overlays: student learning, academic writing, research, coding, data analysis, creative work, roleplay, decision advice.
+- Skills and references: detailed checklists, examples, repair recipes, and edge cases loaded at point of need.
 
-- progressive / point-of-need skill loading;
-- truth and uncertainty boundaries;
-- verify-before-claim behavior;
-- independent validation / oracle thinking;
-- scope control and minimal complete changes;
-- inspect-before-edit and tool discipline;
-- evidence-led research and citation integrity;
-- anti-slop writing and non-inflated claims;
-- academic evidence / discussion discipline;
-- argument and causal reasoning audits;
-- methodical failure recovery;
-- explicit memory-vs-inference boundaries.
+The source collections are community-maintained and may contain partial, stale, tool-specific, or model-specific captures. A pattern appearing in a leaked prompt is not by itself proof that it is best for every model. This pack therefore uses a placement rubric and paraphrases transferable ideas rather than treating every source rule as a universal requirement.
 
-The detailed files in `references/` are original synthesis and paraphrase written for this pack. They are not intended as verbatim reproductions of the source prompts.
+Research pass checked: 2026-10-10.
