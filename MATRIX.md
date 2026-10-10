@@ -21,6 +21,22 @@
 | untrusted-content | trust boundaries | prompt-injection, untrusted-files, secrets-handling, external-actions, weak-model-mode |
 | review-and-critique | review / self-check | review-mindset, self-review, receiving-critique, weak-model-mode |
 
+## Prompt-layer routing matrix
+
+This pack has two orthogonal layers: **prompt layers** (behavior that is not a task procedure) and **skills** (procedures). Both route from the same task cue.
+
+| Always-on core (from `AGENTS.core.md`) | Conditional overlay (`system-prompts/overlays/`) | Skill / reference |
+|---|---|---|
+| No empty praise; evaluate claims independently | Decision & argument advisor | `argument-audit` |
+| Do not fabricate; calibrate confidence to evidence | Research & web | `research-and-citations` |
+| Stay within the requested scope | Coding agent / agent operations | `scope-and-minimal-change`, `code-craft` |
+| Attempted action is not verified success | Data analysis / coding agent | `verify-before-claim` |
+| Direct answer, detail proportional to the task | Student learning / academic writing | `academic-report`, `anti-slop-writing` |
+| Respect known preferences without universalising them | Creative / artist / roleplay | `anti-slop-writing` when text quality matters |
+| Report what actually happened | any | `communication-style`, `review-and-critique` |
+
+See `system-prompts/PLACEMENT-RUBRIC.md` for why these layers differ, and `system-prompts/INDEX.md` for the full task-cue router.
+
 ## Loading policy
 
 `SKILL.md` is intentionally short. Use `references/INDEX.md` to route into detailed rules. Load only what the current task needs; use `weak-model-mode.md` when attention or instruction-following is unreliable.

@@ -1,8 +1,36 @@
-# Personal Agent Skill Pack
+# Personal Agent Skill Pack + System Prompt Layers
+
+A personal behavior configuration for Pi / OpenCode and other tool-using agents. It combines a **small always-on core**, **task-conditioned prompt overlays**, and **progressively loaded procedural Skills**.
 
 A progressively-loaded personal Skill Pack distilled from recurring high-value agent behavior patterns found across public system-prompt collections such as `elder-plinius/CL4R1T4S` and `asgeirtj/system_prompts_leaks`.
 
 This package is a synthesis and paraphrase, not a verbatim copy of those repositories.
+
+## Architecture
+
+```text
+Global core (short, always on)          AGENTS.core.md, system-prompts/00-global-core.md
+  ├── direct, non-sycophantic communication
+  ├── truth / uncertainty boundaries
+  ├── scope fidelity
+  └── no false claims of completed actions
+        ↓ when the task matches
+Domain overlay (one or a few)           system-prompts/overlays/
+  ├── student learning          ├── coding agent
+  ├── academic writing          ├── data analysis
+  ├── research & web            ├── creative / artist
+  ├── decision & argument       └── roleplay
+        ↓ when the task needs tools/files
+Agent operations                        system-prompts/10-agent-operations.md
+        ↓ when a procedure is needed
+Skill + reference checklist             skills/*/SKILL.md, skills/*/references/
+```
+
+**Why the split matters.** A rule like "do not open with generic praise" belongs in the always-on core, because it applies to every task and costs nothing to omit. A roleplay persona, a student-tutoring method, or a multi-source research workflow should activate *only* when the task calls for it — loading them permanently fights the task's own requirements. `system-prompts/PLACEMENT-RUBRIC.md` holds the five tests for deciding which side of that line a rule falls on.
+
+**Why no universal role prompt.** "Act as a professor", "be a researcher", "always be concise", "always be comprehensive", and "always ask questions" each optimize for a subset of tasks. A computer-science student may need a worked explanation in one turn, a ready-to-submit formatted draft in another, and unembellished code in a third. The router identifies the **task mode** instead of treating one identity as permanent.
+
+See `SYSTEM-PROMPT-ARCHITECTURE.md` for the design summary and `system-prompts/INDEX.md` for the task-cue router.
 
 ## Structure
 
@@ -66,13 +94,20 @@ cd personal-agent-skill-pack
 bash install.sh
 ```
 
-By default this installs to:
+The installer places:
 
-```text
-~/.agents/skills/
-```
+| Content | Destination |
+|---|---|
+| Skills | `~/.agents/skills/` |
+| Prompt layers | `~/.agents/system-prompts/personal-agent-skill-pack/` |
+| Portable core | `~/.agents/AGENTS.core.personal.md` |
 
-Existing skills with the same name are moved to `~/.agents/skills-backups/<timestamp>/` before being replaced.
+Replaced skill or profile directories are moved to `~/.agents/personal-pack-backups/<timestamp>/` rather than silently deleted.
+
+The installer does **not** edit your active Pi or OpenCode configuration. Review and activate manually:
+
+- **Pi** — review `system-prompts/adapters/pi-append-system.template.md` and append its body to your existing `~/.pi/agent/APPEND_SYSTEM.md`. Do not replace `SYSTEM.md` unless you intend to replace Pi's default system prompt.
+- **OpenCode** — review `system-prompts/adapters/opencode-global-AGENTS.template.md` and append its rules to `~/.config/opencode/AGENTS.md`. Exact instruction-file behavior can differ between release lines, so confirm against the documentation for your installed version.
 
 ## Recommended use
 
@@ -91,16 +126,21 @@ Typical combinations:
 
 ### Intended behavior on a less capable model
 
-1. load the matching `SKILL.md`;
-2. open that skill's `references/INDEX.md`;
-3. load only the clearly relevant references;
-4. load `references/weak-model-mode.md` and follow it as a procedure;
-5. run the skill's final checklist before responding.
+1. identify the task mode in one short internal label;
+2. load the matching `SKILL.md`;
+3. open that skill's `references/INDEX.md`;
+4. load only the clearly relevant references;
+5. load `references/weak-model-mode.md` and follow it as a procedure;
+6. run the skill's final checklist before responding.
+
+Do not rely on the router's judgment on a weak model. `system-prompts/INDEX.md` §3 gives the ordered procedure.
 
 ## Source note
 
-The two source repositories are living collections and change over time. This pack deliberately extracts cross-model patterns rather than copying any single vendor's entire prompt. See `SOURCES.md` for the source map and extraction notes.
+The two source repositories are living collections and change over time. This pack deliberately extracts cross-model patterns rather than copying any single vendor's entire prompt. See `SOURCES.md` for the source map and extraction notes, and `system-prompts/research-notes/SOURCES-AND-RATIONALE.md` for why the layers are separated.
 
 ## Conflict handling
 
 Higher-priority instructions and explicit user requirements remain authoritative. If a local project instruction directly applies, follow it. Use this pack to improve execution quality, not to override task-specific constraints.
+
+Resolve conflicts in this order: platform safety → explicit user request → project instruction files → global core → active overlay → active skill → style defaults. See `AGENTS.core.md` for the full order.

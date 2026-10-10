@@ -67,6 +67,18 @@ Both are living collections and change over time. This pack extracts cross-model
 
 **Made `weak-model-mode.md` skill-specific.** In the first pass this file was a byte-identical shared template in all ten skills. It is now a per-skill procedure, because a weak model fails differently in each domain — filling blanks in a lab report, over-engineering in code, retrying blindly in recovery.
 
+## Prompt-layer sources
+
+The prompt layers (`system-prompts/`) draw on a different slice of the same two repositories than the skills do: always-on core behavior, persona and mode conditioning, and host-specific prompt placement rather than task procedures. The evidence and reasoning for each placement decision are recorded in `system-prompts/research-notes/SOURCES-AND-RATIONALE.md`, and the placement tests are in `system-prompts/PLACEMENT-RUBRIC.md`.
+
+Representative patterns consulted for the prompt layers:
+
+- Anthropic Claude captures — explicit bans on generic praise openers, separate instruction blocks for search / citations / safety / roleplay (evidence that domain instructions should not all be permanently loaded)
+- OpenCode instructions — progressive Skill loading as an architecture rather than a global-prompt requirement
+- Pi documentation — distinct `SYSTEM.md`, `APPEND_SYSTEM.md`, and instruction/context files
+- OpenCode documentation — global user instructions via `~/.config/opencode/AGENTS.md`
+- Public Anthropic and Google prompting guidance — critical constraints and persona up front; different model versions need different amounts of self-checking, which argues for an invariant core plus overlays rather than one imported prompt
+
 ## Attribution and limits
 
 The detailed files in `references/` are original synthesis and paraphrase written for this pack. They are not verbatim reproductions of the source prompts, and no source prompt is quoted at length.
