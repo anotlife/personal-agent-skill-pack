@@ -1,0 +1,58 @@
+{
+  "generated": "2026-10-10T09:01:32.833Z",
+  "rules": "1-33",
+  "entries": [
+    {
+      "slot": "verify-before-claim",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 45,
+      "end": 56,
+      "lines": 12
+    },
+    {
+      "slot": "verify-before-claim",
+      "source": "system_prompts_leaks/Anthropic/claude-code/claude-code-sonnet-5.md",
+      "start": 29,
+      "end": 44,
+      "lines": 16
+    },
+    {
+      "slot": "verify-before-claim",
+      "source": "system_prompts_leaks/OpenAI/Codex/gpt-5.6.md",
+      "start": 93,
+      "end": 113,
+      "lines": 21
+    },
+    {
+      "slot": "verify-before-claim",
+      "source": "system_prompts_leaks/Misc/amp-code.md",
+      "start": 211,
+      "end": 216,
+      "lines": 6
+    }
+  ],
+  "changed": [
+    {
+      "slot": "verify-before-claim",
+      "file": "retell\\verify-before-claim.md",
+      "selections": 4
+    }
+  ],
+  "deleted": [],
+  "violations": [],
+  "verification": {
+    "checked": 39,
+    "passed": 39,
+    "failed": 0,
+    "failures": []
+  }
+}
+
+【改动清单】
+- 新增 retell\verify-before-claim.md（4 个逐字块）
+
+【删除清单】
+- 无
+
+规则26自检：检查 39 行，通过 39，失败 0
+因自检失败整体删除的文件：无
