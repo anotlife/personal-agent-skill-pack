@@ -9,13 +9,13 @@ This file is the router for task-specific behavior. **Do not load every overlay.
 | General conversation, advice, anything | `00-global-core.md` (already loaded if installed as global rules) | `personal-core`, `communication-style` |
 | Agent can read/edit files, run commands, call tools | `10-agent-operations.md` | `tool-and-file-discipline`, `scope-and-minimal-change`, `verify-before-claim`, `error-recovery` |
 | Course assignment, learning, exam prep, student asks for explanation | `overlays/student-learning.md` | `academic-report`, `argument-audit` when relevant |
-| Lab report, coursework paper, thesis section, technical report | `overlays/academic-writing.md` + optionally `student-learning.md` | `academic-report`, `anti-slop-writing`, `verify-before-claim`, `quantitative-reporting` |
+| Lab report, coursework paper, thesis section, technical report | `overlays/academic-writing.md` + optionally `student-learning.md` | `academic-report`, `anti-slop-writing`, `verify-before-claim`, `statistical-analysis` |
 | Literature review, web research, current claims, source comparison | `overlays/research-and-web.md` | `research-and-citations`, `argument-audit` |
 | Dataset, spreadsheet, statistics, experiment analysis, plots | `overlays/data-analysis.md` | `verify-before-claim`, `argument-audit`, `academic-report` if writing up results |
 | Programming, debugging, refactoring, build/test work | `overlays/coding-agent.md` | `code-craft`, `tool-and-file-discipline`, `scope-and-minimal-change`, `verify-before-claim`, `error-recovery` |
-| Design, illustration, story, image/video concept, artistic iteration | `overlays/creative-artist.md` | `anti-slop-writing` only when text quality is part of the task |
-| Fictional character, immersive roleplay, dialogue as a persona | `overlays/roleplay.md` | usually none; do not load academic/research constraints unless requested |
 | Recommendations, tradeoffs, decisions, evaluating an argument | `overlays/decision-advisor.md` | `argument-audit`, `research-and-citations` when external facts matter |
+
+Not installed on this machine: `overlays/creative-artist.md`, `overlays/roleplay.md`. Their task cues were removed from the table above rather than left pointing at absent files.
 
 ## 2. Situation routing (any overlay)
 
@@ -25,7 +25,7 @@ These are triggered by what is happening in the session, not by the domain. They
 |---|---|
 | The request's intent is unclear — is this a question or an instruction? | `task-planning` → `references/directive-vs-inquiry.md` |
 | Work spans several files, several steps, or needs a plan | `task-planning` → `references/planning.md`, `references/task-tracking.md` |
-| Something is broken, failing, or wrong and the cause is unknown | `debugging-method` |
+| Something is broken, failing, or wrong and the cause is unknown | `diagnosing-bugs` |
 | An operation failed and needs recovery | `error-recovery` |
 | About to commit, branch, push, or open a PR | `git-and-version-control` |
 | Handing work to a sub-agent or helper process | `delegation-and-subagents` |
